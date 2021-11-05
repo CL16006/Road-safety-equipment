@@ -52,3 +52,21 @@ body { margin: 0;
         position: fixed;
         z-index: 100;
     }
+
+    a:link, a:visited, a:active {
+        text-decoration:none;
+    }
+
+    #btnInicio{
+        margin: 10px;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: rgb(62, 116, 8);
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid rgb(54, 10, 134);
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+    }

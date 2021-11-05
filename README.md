@@ -1,0 +1,3 @@
+AppMapBoxGps
+
+Esta aplicacion se ha creado para el proyeto final de la catedra de Arquitectura de computadoras y tiene como proposito servir de herramienta a los ciclistas para ver las rutas para sus destinos, ademas de proporcionarle informacion sobre su hubicacion con GPS y mostar las distancias entre diferentes puntos, la herramienta es complementaria al circuito acoplado que se instalara en la bicicleta para indicar señalización al momento de conducir.
