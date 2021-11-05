@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background: linear-gradient(30deg,rgb(17, 1, 1),rgb(202, 22, 22));
+}
+
 a:link, a:visited, a:active {
     text-decoration:none;
 }
@@ -12,7 +16,6 @@ a:link, a:visited, a:active {
 .container{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(30deg,rgb(17, 1, 1),rgb(202, 22, 22));
     background-size: cover;
     background-position: center;
     padding: 0 8%;
