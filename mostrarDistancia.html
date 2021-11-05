@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Medir Distancia</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<link href="./css/style.css" rel="stylesheet">
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js"></script>
+
+</head>
+<body>
+<div id="preloader"></div>
+<div id="map"></div>
+<div id="distance" class="distance-container"></div>
+
+<script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+<script src="./js/calcularDistancia.js"></script>
+<script>
+    var loader=document.getElementById("preloader");
+
+window.addEventListener("load", function(){
+loader.style.display="none";
+})
+  </script>
+</body>
+</html>
