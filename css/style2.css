@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* No se puede seleccionar ni arrastrar la imagen*/
+.imagen {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.footer{
+  border-top: 1px solid #CCCCCC;
+}
+
+.fs {
+  font-size: 3rem;
+}
+
+.link{
+  padding: 4px;
+}
+
+.link:hover{
+  border-radius: 25px;
+  background-color: #F6F6F6;
+}
