@@ -1,9 +1,9 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoiZmF0aW1hY2FsZGVyb24iLCJhIjoiY2t2MmpjaDhuMGgyaDJ3bm53b2dtMmh0bCJ9.anBlXoK6KS8BfBOjHqTZ1w';
 const map = new mapboxgl.Map({
 container: 'map', // container ID
-style: 'mapbox://styles/mapbox/streets-v11', // style URL
+style: 'mapbox://styles/mapbox/streets-v9',   // style URL
 center: [-89.3661482, 13.7128876], // starting position [lng, lat]
-zoom: 9 // starting zoom
+zoom: 13 // starting zoom
 });
 
 /* Given a query in the form "lng, lat" or "lat, lng"
@@ -58,14 +58,24 @@ const coordinatesGeocoder = function (query) {
   };
   
   // Add geolocate control to the map.
-map.addControl(
-  new mapboxgl.GeolocateControl({
-  positionOptions: {
-  enableHighAccuracy: true
-  },
-  // When active the map will receive updates to the device's location as it changes.
-  trackUserLocation: true,
-  // Draw an arrow next to the location dot to indicate which direction the device is heading.
-  showUserHeading: true
-  })
-  );
+
+  map.addControl(
+    new MapboxGeocoder({
+      accessToken: mapboxgl.accessToken,
+      mapboxgl: mapboxgl
+    }),'top-left'
+  ); 
+
+
+  map.addControl(new mapboxgl.NavigationControl());
+
+map.addControl(new mapboxgl.FullscreenControl());
+
+map.addControl(new mapboxgl.GeolocateControl({
+    positionOptions: {
+        enableHighAccuracy: true
+    },
+    trackUserLocation: true
+}),'bottom-right');
+
+  

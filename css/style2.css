@@ -12,6 +12,66 @@ body {
   -ms-user-select: none;
 }
 
+.menu.inzquierdo{
+  position: relative;
+  margin-right: 30px;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  height: 50vh !important;
+}
+
+.contendor-map{
+  position: relative;
+  padding: 10px;
+  margin-right: 15px;
+  margin-left: 15px;
+  height: 80vh;
+  
+  
+}
+
+.label{
+  border-radius: 15px;
+  border: 1px solid #39F8B0;
+  background-color: #39F8B0;
+  color: white;
+  font-weight: bold;
+}
+
+.border-green{
+  border-radius: 100%;
+  width: 120px;
+  height: 120px;
+}
+
+.a{
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  text-decoration: none;
+  color: #777777;
+}
+
+.a:hover{
+    border-radius: 25px;
+    color: #777777;
+    background-color: #F6F6F6;
+}
+
+.img-perfil{
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+}
+
+.map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .footer{
   border-top: 1px solid #CCCCCC;
 }
