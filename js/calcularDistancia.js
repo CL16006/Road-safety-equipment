@@ -1,14 +1,15 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoiZmF0aW1hY2FsZGVyb24iLCJhIjoiY2t2MmpjaDhuMGgyaDJ3bm53b2dtMmh0bCJ9.anBlXoK6KS8BfBOjHqTZ1w';
 const map = new mapboxgl.Map({
 container: 'map', // container ID
-style: 'mapbox://styles/mapbox/streets-v11', // style URL
+style: 'mapbox://styles/mapbox/streets-v9', // style URL
 center: [-89.3661482, 13.7128876], // starting position [lng, lat]
 zoom: 9 // starting zoom
 });
 
 /* Given a query in the form "lng, lat" or "lat, lng"
 * returns the matching geographic coordinate(s)
-* as search results in carmen geojson format,
+* as search results in carmen geoj
+son format,
 * https://github.com/mapbox/carmen/blob/master/carmen-geojson.md */
 const coordinatesGeocoder = function (query) {
   // Match anything which looks like

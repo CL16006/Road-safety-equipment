@@ -75,7 +75,7 @@ map.addControl(
   trackUserLocation: true,
   // Draw an arrow next to the location dot to indicate which direction the device is heading.
   showUserHeading: true
-  })
+  }),'bottom-right'
   );
 
 //se comprueba si serviceWorker esta en el navegador 
