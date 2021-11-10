@@ -168,3 +168,11 @@ const coordinatesGeocoder = function (query) {
           ? 'pointer'
           : 'crosshair';
   });
+
+  
+  map.addControl(new mapboxgl.GeolocateControl({
+    positionOptions: {
+        enableHighAccuracy: true
+    },
+    trackUserLocation: true
+}),'bottom-right');
