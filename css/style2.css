@@ -19,20 +19,33 @@ body {
   -ms-user-select: none;
 }
 
+.card-item{
+  padding-top: 5px;
+  text-indent: 20px;
+  border-radius: 35px 0px 35px 0px;
+-moz-border-radius: 35px 0px 35px 0px;
+-webkit-border-radius: 35px 0px 35px 0px;
+border: 1px solid #39F8B0
+
+}
+
+.contend{
+  padding: 20px;
+}
 
 .spin{
   color: #39F8B0;
 }
+
 .menu.inzquierdo{
   position: relative;
-  margin-right: 30px;
-  margin-left: 15px;
   margin-bottom: 20px;
-
+  height: 80vh !important;
 }
 
 .contendor-map{
   position: relative;
+  margin-top: 70px !important;
   margin-right: 15px;
   margin-left: 15px;
   height: 80vh;
